@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Little Corner 💖</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container" id="loginSection">
+    <h1>Hey You 💌</h1>
+    <p>Enter the secret passcode:</p>
+    <input type="password" id="passcode" placeholder="Only you know it 😉"/>
+    <button onclick="checkPasscode()">Enter</button>
+  </div>
+
+  <div class="container hidden" id="mainContent">
+    <h1>Pick a Date ❤️</h1>
+    <input type="date" id="datePicker"/>
+    <button onclick="showContent()">Show Your Surprise</button>
+
+    <div id="contentArea" class="hidden">
+      <h2>Letter 💌</h2>
+      <button onclick="openLetter()">Open Full Letter</button>
+      <p id="letterPreview"></p>
+
+      <h2>Note 📝</h2>
+      <p id="note"></p>
+
+      <h2>Quote 💬</h2>
+      <p id="quote"></p>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop muted>
+    <source src="audio/bg_music.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- Letter Panel Slide-In -->
+  <div id="letterPanel" class="letter-panel hidden">
+    <div class="panel-content">
+      <button onclick="closeLetter()" class="close-btn">×</button>
+      <h2>My Letter to You 💌</h2>
+      <p id="fullLetter"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

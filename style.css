@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+  font-family: 'Quicksand', sans-serif;
+  color: #4a2c2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #e75480;
+}
+
+button {
+  background: #ffb6c1;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff6f91;
+}
+
+input[type="password"],
+input[type="date"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#contentArea {
+  margin-top: 30px;
+}
+
+p {
+  font-size: 1.2em;
+  padding: 10px;
+  background: #fff0f5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.letter-panel {
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  width: 40%;
+  height: auto;
+  background-color: #fff0f5;
+  border: 2px solid #ff69b4;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  border-radius: 12px;
+  padding: 20px;
+  z-index: 999;
+  font-family: 'Great Vibes', cursive;
+  display: none;
+}
+
+.letter-panel.show {
+  display: block;
+}
+
+.close-btn {
+  float: right;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #ff1493;
+  cursor: pointer;
+}
