@@ -51,5 +51,5 @@ function openLetter() {
 }
 
 function closeLetter() {
-  document.getElementById('letterPanel').classList.add('hidden');
+  document.getElementById('letterPanel').classList.remove('show');
 }
